@@ -6,43 +6,47 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+
     <title>To-do Home</title>
 </head>
 
 <body>
-    <header>
-        <img src="Tick.png" width="50" alt="Logo" /><a href="#">To-do App</a>
-        <nav>
-            <a href="#">Home</a>
-            <a href="about.html">About</a>
-            <a href="#">Other-Apps</a>
+    <header class="Indexheader">
+        <a href="#">✔To-do App</a>
+        <nav class="headerNav">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="#">Other-Apps</a></li>
+            </ul>
         </nav>
     </header>
 
     <main>
-        <section>
-            <br>
+        <section class="search-bar">
+            <i class="fa-solid fa-magnifying-glass"></i>
             <input type='text' placeholder='Search the list..' />
         </section>
 
-        <section>
-            <br>
+        <section class="addTodo">
             <input type='text' placeholder='Type here..' />
             <button type="submit">Add</button>
         </section>
 
-        <section>
+        <section class="todoList">
             <table>
                 <tr>
-                    <td>Task3......</td>
+                    <td>Task3...........................</td>
                     <td><input type="checkbox" /></td>
                 </tr>
                 <tr>
-                    <td>Task 2.....</td>
+                    <td>Task 2......................</td>
                     <td><input type="checkbox" /></td>
                 </tr>
                 <tr>
-                    <td>Task 1.....</td>
+                    <td>Task 1.......................</td>
                     <td><input type="checkbox" /></td>
                 </tr>
             </table>
@@ -50,19 +54,19 @@
 
     </main>
     <hr>
-    <footer>
-        <div>
-            <p>Follow me on:</p>
-            <a href="#"><i class="fa-brands fa-facebook"></i></a>
-            <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
-            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="#"><i class="fa-brands fa-github"></i></a>
-        </div>
+    <footer class="idexfooter">
+        <div class="footerFlex">
+            <div class="SMFlex">
+                <p>Follow me on:</p>
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+            </div>
 
-        <br>
-
-        <div>
-            <p>Shamaljalam@gmail.com</p>
+            <div class="footerEmail">
+                <p>Shamaljalam@gmail.com</p>
+            </div>
         </div>
 
         <small>Sham &copy; 2023 All rights reserved</small>
