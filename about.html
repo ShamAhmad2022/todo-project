@@ -6,71 +6,91 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+
     <title>To-do About</title>
 </head>
 
 <body>
-    <header>
-        <img src="Tick.png" width="50" /><a href="#">To-do App</a>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="#">About</a>
-            <a href="#">Other-Apps</a>
+    <header class="Indexheader">
+        <a href="#">✔To-do App</a>
+        <nav class="headerNav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Other-Apps</a></li>
+            </ul>
         </nav>
     </header>
-
+<br><br>
     <main>
-        <section>
-            <h2>About the app</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni officia itaque amet! Harum, neque magnam
-                officiis excepturi unde omnis odio! Illum sapiente possimus id aliquid vel obcaecati adipisci, non,
-                repudiandae alias excepturi hic! Vero voluptatibus repellat eius delectus totam blanditiis officia
-                doloribus optio dolorum hic adipisci quibusdam aperiam, deserunt ea.</p>
-            <img src="todolist.png" alt="to-do list" width="450" />
+        <section class="art1">
+            <div class="art1flex">
+                <div>
+                    <h2>About the app</h2>
+
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni officia itaque amet! Harum, neque
+                        magnam
+                        officiis excepturi unde omnis odio! Illum sapiente possimus id aliquid vel obcaecati adipisci,
+                        non,
+                        repudiandae alias excepturi hic! Vero voluptatibus repellat eius delectus totam blanditiis
+                        officia
+                        doloribus optio dolorum hic adipisci quibusdam aperiam, deserunt ea.</p>
+                </div>
+                <img src="todolist.png" alt="to-do list" width="350" />
+            </div>
         </section>
 
-        <section>
+        <section class="art2">
+            <div class="art1flex">
+                <img src="todolist2.png" alt="to-do list" width="350" />
+            <div>
             <h2>About Me</h2>
             <p>Sham Ahmad, a front-end developer, ipsum dolor sit amet consectetur adipisicing elit. Magni officia
                 itaque amet! Harum, neque magnam officiis excepturi unde omnis odio! Illum sapiente possimus id aliquid
                 vel obcaecati adipisci, non, repudiandae alias excepturi hic! Vero voluptatibus repellat eius delectus
                 totam blanditiis officia doloribus optio dolorum hic adipisci quibusdam aperiam, deserunt ea.</p>
-            <img src="todolist2.png" alt="to-do list" width="450" />
+            </div>
+            </div>
+            
         </section>
 
-        <section>
+        <section class="contactSection">
             <h2>Contact</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, amet.</p>
             <form>
+                <div class="formItem">
                 <label>Name:</label>
                 <input type="text" />
-                <br>
+            </div>
+            <div class="formItem">
                 <label>Email:</label>
                 <input type="text" />
-                <br>
-                <br>
+            </div>
+            <div class="formItem">
                 <label>Message:</label>
-                <textarea></textarea>
-                <br>
-                <input type="submit" value="submit" />
+                <textarea cols="110" rows="5"></textarea>
+            </div>
+                <input id="submitB" type="submit" value="submit" />
             </form>
         </section>
     </main>
 
     <hr>
-    <footer>
-        <div>
-            <p>Follow me on:</p>
-            <a href="#"><i class="fa-brands fa-facebook"></i></a>
-            <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
-            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="#"><i class="fa-brands fa-github"></i></a>
-        </div>
+    <footer class="idexfooter">
+        <div class="footerFlex">
+            <div class="SMFlex">
+                <p>Follow me on:</p>
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+            </div>
 
-        <br>
-
-        <div>
-            <p>Shamaljalam@gmail.com</p>
+            <div class="footerEmail">
+                <p>Shamaljalam@gmail.com</p>
+            </div>
         </div>
 
         <small>Sham &copy; 2023 All rights reserved</small>
